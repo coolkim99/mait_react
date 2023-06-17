@@ -21,6 +21,7 @@
     "chart.js": "^2.9.4",
     "css-loader": "^5.0.2",
     "dotenv": "^8.2.0",
+    "gh-pages": "^5.0.0",
     "immer": "^8.0.1",
     "jquery": "^3.5.1",
     "ml5": "^0.5.0",
@@ -54,10 +55,12 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "predeploy" : "npm run build",
+    "build": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "homepage": "https://coolkim99.github.io/mait_react/",
   "eslintConfig": {
     "extends": [
       "react-app",
